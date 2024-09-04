@@ -1,0 +1,103 @@
+/* buyaddress.css */
+
+.form1 {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px; /* Increased padding to heighten the form box */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="tel"] {
+  width: 100%;
+  padding: 12px; /* Increased padding for more height */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="tel"]:focus {
+  border-color: #3399cc;
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: space-between; /* Space out buttons evenly */
+}
+
+.submit-btn,
+.cancel-btn {
+  flex: 1;
+  height: 50px; /* Set a consistent height for buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn {
+  background-color: #3399cc;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #287a9b;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EC7C78;
+    padding: 10px 20px;
+}
+
+.head h1 {
+    font-size: 24px;
+    color: #FAEFED;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #FAEFED;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.icon {
+    position: relative; /* Necessary for positioning the search input and dropdown */
+    display: flex;
+    align-items: center;
+}
+
+.icon button {
+    background: none; /* Remove default button styles */
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* Makes the image white */
+    cursor: pointer;
+}
+
+
+
+/* Hidden search input field */
+.icon input[type="text"] {
+    width: 0;
+    padding: 5px 0; /* Only vertical padding initially */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: width 0.3s ease, padding 0.3s ease; /* Smooth transition */
+    position: absolute;
+    right: 150px; /* Adjust this based on the position of the search icon */
+    top: 0;
+    opacity: 0; /* Start with hidden */
+}
+
+/* Expand search input on hover */
+.icon:hover input[type="text"] {
+    width: 150px; /* Full width when expanded */
+    padding: 5px 10px; /* Add horizontal padding */
+    opacity: 1;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the button */
+    right: 0;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure dropdown is above other content */
+}
+
+.icon:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    width: 90px;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}

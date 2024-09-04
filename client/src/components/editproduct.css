@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Add margin below the title */
+    font-size: 24px; /* Larger font size for the title */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px; /* Increased max-width for better layout */
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Increased margin for better spacing */
+    font-weight: bold;
+    color: #555; /* Slightly darker color for labels */
+}
+
+input, textarea {
+    width: 100%; /* Adjust width to full container */
+    padding: 12px; /* Increased padding for better touch area */
+    border: 1px solid #ccc; /* Lighter border color */
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box;
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+textarea {
+    height: 150px; /* Fixed height for textareas */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+small {
+    display: block;
+    color: #888;
+    font-size: 0.9em; /* Slightly larger font size for small text */
+    margin-top: 5px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px; /* Increased padding for better button appearance */
+    border: none;
+    border-radius: 6px; /* Rounded corners for button */
+    cursor: pointer;
+    font-size: 18px; /* Increased font size for button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}

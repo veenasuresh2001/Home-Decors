@@ -1,0 +1,119 @@
+/* Main Container */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1100px;
+    width: 90%;
+    background-image: url('../images/userhome2.jpg'); /* Background image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+  }
+  
+  /* Overlay Effect */
+  .main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+    z-index: 1;
+  }
+  
+  /* Welcome Text */
+  .main h2 {
+    font-size: 2.5rem;
+    z-index: 2; /* Ensures text is above the overlay */
+    margin: 0;
+    padding: 1rem;
+    background: white; /* Background for text readability */
+    border-radius: 8px;
+    color: #EC7C78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+  
+  /* Main2 Container */
+  .main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1200px;
+    background-image: url('../images/kichen.jpg'); /* Add the path to your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  /* Explore Button */
+#explore {
+    font-size: 1.2rem;
+    padding: 15px 30px; /* Increase padding for a more prominent button */
+    border: none;
+    border-radius: 25px; /* Rounded corners for a softer look */
+    background: linear-gradient(135deg, #EC7C78, #FF9A8B); /* Gradient background */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    z-index: 2; /* Ensures button is above any overlay */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+#explore:hover {
+    background: linear-gradient(135deg, #FF9A8B, #EC7C78); /* Reverse gradient on hover */
+    transform: translateY(-5px) scale(1.05); /* Slight lift and scale on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Active Effect */
+#explore:active {
+    transform: translateY(-2px) scale(0.98); /* Minor scale down on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow on active state */
+}
+
+/* Focus Effect */
+#explore:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 4px rgba(255, 154, 139, 0.5); /* Custom focus ring */
+    transform: scale(1.03); /* Slight scale up on focus */
+}
+
+/* Adding a ripple effect */
+#explore::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: width 0.5s, height 0.5s, opacity 0.5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#explore:active::after {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transition: 0s;
+}

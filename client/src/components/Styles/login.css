@@ -1,0 +1,84 @@
+/* login.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.loginpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginpage h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.loginpage form {
+  background: #fff;
+  margin-bottom: 100px;
+  padding: 30px 20px; /* Consistent padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginpage input {
+  width: calc(100% - 20px); /* Matching the input width */
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+.loginpage input:focus {
+  border-color: #4facfe; /* Consistent focus color */
+  outline: none;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5); /* Matching shadow */
+}
+
+.loginpage button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color:  #EC7C78; /* Consistent button color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.loginpage button:hover {
+  background-color: #0099cc; /* Matching hover effect */
+}
+
+#ptag {
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+#ptag a {
+  color: #4facfe;
+  text-decoration: none;
+  transition: text-decoration 0.3s; /* Smooth transition for hover effect */
+}
+
+#ptag a:hover {
+  text-decoration: underline; /* Consistent link hover effect */
+}

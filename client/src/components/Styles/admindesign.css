@@ -1,0 +1,16 @@
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../images/adminhome.jpg'); /* Update with the actual path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Text color for contrast */
+}
+
+.admin-title {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add some shadow for better readability */
+}

@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home {
+    width: 100%;
+    height: 100vh; /* Makes the div full height of the viewport */
+    display: flex; /* Center the content */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide any overflow */
+    background-image: url('/assets/homedeco.avif'); /* Set the background image */
+    background-size: cover; /* Cover the container, keeping the aspect ratio */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    position: relative;
+    text-align: center; /* Center text within the container */
+}
+
+.home h1 {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the background */
+    color: white;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.home p {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the background */
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px; /* Add some margin to create space from the heading */
+}

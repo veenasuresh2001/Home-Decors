@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Product Details */
+.product-card h2 {
+    font-size: 1.5em;
+    margin: 15px;
+    color: #343a40;
+}
+
+.product-card p {
+    font-size: 1em;
+    margin: 10px 15px;
+    color: #6c757d;
+}
+
+.product-card p:nth-child(3) {
+    font-weight: bold;
+    color: #495057;
+}
+
+.product-card p:nth-child(4) {
+    font-size: 1.2em;
+    color: #e63946;
+}
+
+.product-card p:nth-child(5) {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+/* Buttons */
+button {
+    margin: 10px 15px 15px 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Buy Now Button */
+.buynow {
+    background-color: #28a745; /* Green background */
+    color: white;
+}
+
+.buynow:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Add to Cart Button */
+.cart {
+    background-color: #17a2b8; /* Teal background */
+    color: white;
+}
+
+.cart:hover {
+    background-color: #138496; /* Darker teal */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .product-card h2 {
+        font-size: 1.2em;
+    }
+
+    .product-card p {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
